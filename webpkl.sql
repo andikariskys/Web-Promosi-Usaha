@@ -111,6 +111,7 @@ CREATE TABLE `tb_variasi` (
   `id` int(11) NOT NULL,
   `id_promosi` int(11) NOT NULL,
   `variasi_produk` varchar(255) NOT NULL,
+  `harga_variasi` int(11) NOT NULL,
   `foto` varchar(225) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -119,8 +120,8 @@ CREATE TABLE `tb_variasi` (
 --
 
 INSERT INTO `tb_variasi` (`id`, `id_promosi`, `variasi_produk`, `foto`) VALUES
-(8, 3, 'Kopi Kapal Api', 'kopi.jpg'),
-(9, 3, 'Kentang Goreng', 'kentang.jpg');
+(8, 3, 'Kopi Kapal Api', 8000 , 'kopi.jpg'),
+(9, 3, 'Kentang Goreng', 10000 , 'kentang.jpg');
 
 --
 -- Indexes for dumped tables
