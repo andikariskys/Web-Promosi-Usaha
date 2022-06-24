@@ -25,7 +25,7 @@
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url('login/kelola_promosi') ?>">
-                    <span>Kelola Promosi</span></a>
+                    <span>Kelola Usaha</span></a>
             </li>
 
             <!-- Divider -->
