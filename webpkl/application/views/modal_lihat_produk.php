@@ -12,7 +12,7 @@
               class="card-img-top" alt="Foto <?php echo $var->foto ?>">
               <div class="card-body">
                 <h5 class="card-title"><?php echo $var->variasi_produk ?></h5>
-								<p class="text-right">Rp. <?php echo $var->harga_variasi ?> </p>
+		<p class="text-right">Rp. <?php echo $var->harga_variasi ?> </p>
                 <?php foreach ($no_tlp as $no) : ?>
                   <a href="https://api.whatsapp.com/send?phone=<?php echo $no->no_whatsapp ?>&text=Saya%20ingin%20membeli%20*<?php echo $var->variasi_produk ?>*%20dari%20produk%20yang%20Anda%20jual,%20tolong%20kirim%20ke%20alamat%20saya:%0ANama%20Saya:%0AAlamat:" 
                     class="btn btn-primary">Pesan Sekarang</a>
