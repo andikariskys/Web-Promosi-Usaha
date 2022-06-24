@@ -1,5 +1,5 @@
 <div class="container-fluid">
-	<p class="h1 text-muted mt-3">Kelola Promosi</p>
+	<p class="h1 text-muted mt-3">Kelola Usaha</p>
 	<button class="btn btn-sm btn-primary mt-3" data-toggle="modal" data-target="#tambah_promosi">
 		<i class="fa fa-plus fa-sm"></i> Tambah Usaha</button>
 
