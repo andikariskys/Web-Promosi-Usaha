@@ -13,7 +13,8 @@
           class="card-img-top" alt="Foto <?php echo $var->foto ?>">
           <div class="card-body">
             <h5 class="card-title"><?php echo $var->variasi_produk ?></h5>
-            <?php echo anchor('kelola_promosi/hapus_variasi/'.$var->id, 
+						<p class="text-right">Rp. <?php echo $var->harga_variasi ?> </p>
+            <?php echo anchor('login/hapus_variasi/'.$var->id, 
       '<div class="btn btn-danger btn-sm">Hapus</div>') ?>
           </div>
       </div>
@@ -31,7 +32,7 @@
         <h5 class="modal-title" id="exampleModalLabel">Tambahkan Variasi Produk</h5>
       </div>
 
-      <form action="<?php echo base_url('kelola_promosi/tambah_variasi') ?>" method="POST" enctype="multipart/form-data">
+      <form action="<?php echo base_url('login/tambah_variasi') ?>" method="POST" enctype="multipart/form-data">
 
         <div class="modal-body">
           <input type="hidden" name="id_promosi" value="<?php echo $id_usaha ?>">
@@ -46,6 +47,11 @@
             <input type="text" name="variasi_produk" class="form-control">
           </div>
         </div>
+				
+				<div class="form-group">
+					<label>Harga Variasi Produk</label>
+					<input type="text" name="harga_produk" class="form-control">
+				</div>
 
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Close</button>
