@@ -154,6 +154,7 @@
 	{
 		$id_promosi 		= $this->input->post('id_promosi');
 		$variasi_produk		= $this->input->post('variasi_produk');
+		$harga_produk		= $this->input->post('harga_produk');
 		$foto 				= $_FILES['foto']['name'];
 		if ($foto='') {} else{
 			$config['upload_path'] = './uploads/variasi';
@@ -170,10 +171,11 @@
 		$data = array (
 			'id_promosi' 		=> $id_promosi,
 			'variasi_produk' 	=> $variasi_produk,
+			'harga_variasi'		=> $harga_produk,
 			'foto' 				=> $foto
 		);
 		$this->model_usaha->tambah_data($data, 'tb_variasi');
-		redirect('kelola_promosi/kelola_variasi/'.$id_promosi);
+		redirect('login/kelola_variasi/'.$id_promosi);
 	}
 
 	public function hapus_variasi($id)
