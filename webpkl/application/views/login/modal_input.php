@@ -32,7 +32,7 @@
       			<input type="text" name="alamat" class="form-control">
       		</div>
       		<div class="form-group">
-      			<label>No Whatsapp</label>
+      			<label>No Whatsapp (gunakan "62" bukan "0", cth. 6281202xxxx)</label>
       			<input type="text" name="no_whatsapp" class="form-control">
       		</div>
       		<div class="form-group">
